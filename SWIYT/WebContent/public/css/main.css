@@ -1,0 +1,116 @@
+.container-wide {
+  padding: 0 2em;
+}
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
+}
+
+a {
+  padding: 0 15px;
+}
+
+.bold_writing {
+  font-weight: bold;
+  padding: 0;
+  color: #24292e;
+}
+
+.container-wide {
+  padding: 0 6em;
+}
+
+.sign-btn {
+  border-radius: 90px;
+}
+
+nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 0 0;
+  height: 50px;
+}
+
+.main {
+  padding-top: 190px;
+  background: linear-gradient(120deg, #84fab0, #8fd3f4);
+  width: 100%;
+}
+
+.right ul li a.sign-btn {
+  color: #8fd3f4;
+  background-color: white;
+}
+
+.right ul li a.sign-btn:hover {
+  color: white;
+  background-color: #84fab0;
+}
+
+.large_jumbo_wrapper {
+  color: white;
+}
+
+.left_jumbo h1 {
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.large_jumbo_middle .left_jumbo {
+  text-align: left;
+}
+
+.large_jumbo_middle .row .left_jumbo p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.right_jumbo {
+  padding-bottom: 10px;
+}
+
+.copyRight {
+  padding-top: 150px;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#login_modal {
+  width: 310px;
+}
+
+
+
+.content {
+  padding: 22px;
+}
+
+.login_button {
+  width: 100%;
+}
+
+.signin_button {
+  width: 100%;
+}
+
+.inputWrap {
+  padding: 10px;
+}
