@@ -93,9 +93,11 @@ main {
   flex: 1 0 auto;
 }
 
-#login_modal {
+#login_modal{
   width: 310px;
 }
+
+
 
 
 
