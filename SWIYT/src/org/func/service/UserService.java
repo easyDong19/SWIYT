@@ -5,6 +5,7 @@ package org.func.service;
 
 import java.sql.Connection;
 
+
 import org.func.dao.UserDao;
 import org.func.uservo.UserVo;
 
@@ -40,6 +41,26 @@ public class UserService extends AbstractService{
 			} finally{
 				if(conn != null) conn.close();
 			}
+	}
 	
+	public void signup(UserVo user) throws Exception{
+		Connection conn = null;
+		try {
+			conn = getConnection();
+			
+			UserDao dao = new UserDao(conn);
+			
+			//사용 중인 아이디인지 체크
+			UserVo result = dao.searchUserById(user);
+			if(result != null) {
+				throw new Exception("이미 사용중인 아이디입니다.");
+			}
+			//사용자 등록
+			dao.insertUser(user);
+		
+			
+		} finally{
+			if(conn != null) conn.close();
+		}	
 	}
 }

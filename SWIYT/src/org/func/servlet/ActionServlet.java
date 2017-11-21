@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.func.action.IAction;
 import org.func.action.LoginAction;
 import org.func.action.LogoutAction;
+import org.func.action.SignupAction;
 
 /**
  * Servlet implementation class ActionServlet
@@ -27,6 +28,7 @@ public class ActionServlet extends HttpServlet {
 	public void init() throws ServletException{
 		actions.put("login", new LoginAction());
     	actions.put("logout", new LogoutAction());
+    	actions.put("signup", new SignupAction());
 	}
        
   
@@ -36,7 +38,7 @@ public class ActionServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		process(request, response);	
+		
 	}
 
 	

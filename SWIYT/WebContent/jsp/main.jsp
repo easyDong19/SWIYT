@@ -45,8 +45,9 @@
   
   <div id="logout_modal" class="modal">
     <div class="modal-content">
+    <h4>로그아웃 하시겠습니까?</h4>
       <form action="${contextPath}/logout.do" method="post">
-            <button type="submit" class="waves-effect waves-light btn sign-btn">Sign out</button>
+            <button type="submit" class="waves-effect waves-light btn sign-btn logout_button">logout</button>
             </form>
     </div>
   </div>
@@ -71,7 +72,7 @@
           </form>
         </div>
         <div id="signin" class="col s12">
-          <form action="#">
+          <form action="${contextPath}/signup.do" method="post">
             <div class="content">
               <div class="inputWrap">
                 <label for="Email">Email</label>
@@ -81,7 +82,7 @@
                 <input type="password" name="pwd" class="Input" placeHolder="비밀 번호 입력"></div>
               <div class="inputWrap">
                 <label for="nickname">NickName</label>
-                <input type="password" name="nickname" class="Input" placeHolder="닉네임 입력"></div>
+                <input type="text" name="nickname" class="Input" placeHolder="닉네임 입력"></div>
             </div>
             <div class="buttonWrap"><button type="submit" class="waves-effect waves-light btn signin_button">회원가입</button>
             </div>

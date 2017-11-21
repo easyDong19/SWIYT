@@ -94,9 +94,21 @@ main {
 }
 
 #login_modal{
-  width: 310px;
+  width: 300px;
 }
 
+#logout_modal{
+  width: 310px;
+  text-align: center;
+}
+
+#logout_modal h4{
+	font-size: 18px;
+}
+
+.logout_button {
+  width: 100%;
+}
 
 
 
