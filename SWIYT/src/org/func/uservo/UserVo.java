@@ -3,6 +3,7 @@
  */
 package org.func.uservo;
 
+
 /**
 * <pre>
 * org.func.uservo
@@ -21,6 +22,10 @@ public class UserVo {
 	private String pwd;
 	private String nickname;
 	
+	
+	
+	
+
 	public UserVo(){
 
 	}
@@ -72,5 +77,7 @@ public class UserVo {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+	
+
 
 }

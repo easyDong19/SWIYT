@@ -17,6 +17,7 @@ import org.func.action.LoginAction;
 import org.func.action.LogoutAction;
 import org.func.action.SignupAction;
 
+
 /**
  * Servlet implementation class ActionServlet
  */
@@ -38,7 +39,7 @@ public class ActionServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		process(request, response);
 	}
 
 	
@@ -62,6 +63,7 @@ public class ActionServlet extends HttpServlet {
 			if(action == null){
 				throw new Exception(actionName + "에 해당하는 Action 클래스가 없습니다.");
 			}
+			
 			
 			action.execute(request, response);
 			

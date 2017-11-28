@@ -35,7 +35,7 @@ public class UserService extends AbstractService{
 				
 				
 				if(result == null)
-					throw new Exception("Invalid username or password");
+					throw new Exception("아이디나 패스워드가 맞지 않습니다.");
 				
 				return result;
 			} finally{

@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.func.uservo.SummonerVo;
 import org.func.uservo.UserVo;
 
 /**
@@ -61,6 +62,8 @@ public class UserDao {
 	         if(pstmt != null) pstmt.close();
 	      }
 	   }
+	   
+	  
 	   
 	   public UserVo searchUserById(UserVo vo) throws Exception {
 			PreparedStatement pstmt = null;
@@ -120,6 +123,8 @@ public class UserDao {
 		       if(pstmt != null) pstmt.close();
 		    }
 		}
+	   
+	   
 
 	   
 	   

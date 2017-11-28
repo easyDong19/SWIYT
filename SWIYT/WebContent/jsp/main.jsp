@@ -32,8 +32,8 @@
           </c:if>
           <c:if test = "${ !empty user }">
           	<ul>
-          	  <li><a href="#">성장 일기</a></li>
-          	  <li><a href="#"> ${ user.nickname }님</a></li>
+          	  <li><a href="${ contextPath }/jsp/diary_list.jsp">전적</a></li>
+          	  <li><a href="${ contextPath }/jsp/profile.jsp"> ${ user.nickname }님</a></li>
           	  <li><a href="#logout_modal" class="waves-effect waves-light btn sign-btn modal-trigger">logout</a></li>
           	</ul>
           </c:if>
@@ -105,7 +105,7 @@
       <div class="large_jumbo_middle">
         <div class="row">
           <div class="col l5 left_jumbo">
-            <h1>여기서 캐리한 건 나야 나</h1>
+            <h1>나의 실력은 어느정도?</h1>
             <div class="writer_left">
               <p>
                 게임이 끝나고 시작되는 입털기 시간<br /> 모두 다 내가 잘했다고 외치는 때 <br /><a class="bold_writing">그님티</a>에서 객관적으로 판단해보자 <br />
@@ -132,14 +132,27 @@
     <div class="container">
       © 2017 made by dong
     </div>
-
   </div>
-
+  
 
   <!--SCRIPT-->
   <script type="text/javascript" src="${ contextPath }/public/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="${ contextPath }/public/js/materialize.min.js"></script>
   <script tpye="text/javascript" src="${ contextPath }/public/js/main.js"></script>
+  
+  <c:if test="${ error != null }">
+  	<script>
+  		alert('${error}');
+  	</script>
+  </c:if>
+  
+  <c:if test="${ success != null }">
+  	<script>
+  		alert('${success}');
+  	</script>
+  </c:if>
+  
+  
 </body>
 
 </html>

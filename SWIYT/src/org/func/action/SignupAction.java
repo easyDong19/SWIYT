@@ -31,6 +31,7 @@ public class SignupAction implements IAction{
 	 */
 	
 	private void validate(UserVo vo) throws Exception{
+		
 		if(CommonUtil.isEmpty(vo.getEmail())) throw new Exception("이메일를 입력하시오");
 		if(CommonUtil.isEmpty(vo.getPwd())) throw new Exception("비밀번호를 입력하시오");
 		if(CommonUtil.isEmpty(vo.getNickname())) throw new Exception("닉네임를 입력하시오");
@@ -55,9 +56,13 @@ try{
 	      
 	      validate(user);
 	      
+
+	      
 	      // Service 호출
 	      UserService service = new UserService();
 	      service.signup(user);
+	      
+	      request.setAttribute("success", "회원 가입하셨습니다.");
 	      
 	      RequestDispatcher rd = request.getRequestDispatcher("jsp/main.jsp");
 	      rd.forward(request, response);

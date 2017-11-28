@@ -1,0 +1,47 @@
+.top_nav {
+  background: linear-gradient(120deg, #84fab0, #8fd3f4);
+  padding: 0 50px;
+}
+
+.Rank_wrapper{
+  margin-top: 200px;
+}
+
+.soloRank_wrapper{
+  position: relative;
+}
+.soloTier_content{
+  position: absolute;
+  top: 25px;
+  left: 260px;
+}
+.freeRank_wrapper{
+  position: relative;
+}
+
+.freeTier_content{
+  position: absolute;
+  top: 25px;
+  left: 260px;
+}
+
+.SoloRankName{
+  position: absolute;
+  left: 68px;
+  top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.FreeRankName{
+  position: absolute;
+  left: 68px;
+  top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.rank_info {
+	margin-left: 484px;
+	margin-bottom: 30px;
+}
